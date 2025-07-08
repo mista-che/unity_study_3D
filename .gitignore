@@ -76,5 +76,6 @@ crashlytics-build.properties
 
 # Downloaded assets
 /Assets/99.ResourcePacks/
+/Assets/ResourcePacks/
 /Assets/00.Materials/Cat/*
 /Assets/00.Tilemaps/
