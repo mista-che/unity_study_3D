@@ -6,6 +6,10 @@ public class HanoiTower : MonoBehaviour
     public enum HanoiTower_DifficultyLevel { Lv1 = 3, Lv2, Lv3 }; // this makes the index start at 3, which is the # of donuts
     public HanoiTower_DifficultyLevel hanoi_level;
 
+    public GameObject indicator;
+    public Material indicator_white;
+    public Material indicator_yellow;
+
     public GameObject[] donut_prefabs; // 1 2 3 4 5 increasing size
     public Rod[] rod_stacks; // left middle right
 
@@ -28,5 +32,13 @@ public class HanoiTower : MonoBehaviour
 
             yield return new WaitForSeconds(0.75f);
         }
+    }
+
+    private void Update()
+    {
+        if (is_selected)
+            indicator.GetComponent<MeshRenderer>().material = indicator_yellow;
+        else
+            indicator.GetComponent<MeshRenderer>().material = indicator_white;
     }
 }
