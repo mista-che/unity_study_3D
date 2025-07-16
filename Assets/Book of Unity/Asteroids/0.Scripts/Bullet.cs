@@ -8,4 +8,5 @@ public class Bullet : MonoBehaviour
     {
         transform.position += Vector3.up * bullet_velocity;
     }
+
 }

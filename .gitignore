@@ -79,3 +79,7 @@ crashlytics-build.properties
 /Assets/ResourcePacks/
 /Assets/00.Materials/Cat/*
 /Assets/00.Tilemaps/
+/Assets/Fonts/
+
+# Unity Packages
+/Assets/TextMesh Pro/
