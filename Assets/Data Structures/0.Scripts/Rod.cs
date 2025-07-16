@@ -37,12 +37,6 @@ public class Rod : MonoBehaviour
             else
             {
                 Debug.LogError($"You can't move a donut of size {push_number} on top of a {peek_number}.");
-
-                // reset selection
-                HanoiTower.is_selected = false;
-                HanoiTower.selected_donut = null;
-
-
                 return false;
             }
         }
