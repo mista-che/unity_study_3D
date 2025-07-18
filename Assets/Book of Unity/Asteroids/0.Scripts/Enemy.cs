@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
 
     private enum CollisionLayer { DEADZONE = 6, PLAYER = 7, BULLET = 8}
 
-    private void Start()
+    private void OnEnable()
     {
         int random_value = UnityEngine.Random.Range(0, 100);
 
